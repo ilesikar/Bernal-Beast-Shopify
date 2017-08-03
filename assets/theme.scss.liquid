@@ -360,8 +360,10 @@ $color-pinterest: #cb2027;
 $width-site: 1200px;
 $gutter-site: 55px;
 $gutter-site-mobile: 22px;
-$section-spacing: 55px;
-$section-spacing-small: 35px;
+/* $section-spacing: 55px;
+$section-spacing-small: 35px; */
+$section-spacing: 30px;
+$section-spacing-small: 15px;
 $border-radius: 2px;
 
 /*================ Z-Index ================*/
@@ -1177,10 +1179,12 @@ html {
 
 .main-content {
   display: block;
-  padding-top: $section-spacing-small;
+  //padding-top: $section-spacing-small;
+  padding-top: 20px;
 
   @include media-query($medium-up) {
-    padding-top: $section-spacing;
+    //padding-top: $section-spacing;
+    padding-top: 20px;
   }
 }
 
@@ -2529,6 +2533,10 @@ hr {
 .grid--view-items {
   overflow: auto;
   margin-bottom: -$section-spacing-small;
+}
+
+.grid-view-item__free-shipping p {
+  color: rgba(15, 125, 15, 0.75);
 }
 
 .grid-view-item {
